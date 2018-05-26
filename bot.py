@@ -25,7 +25,7 @@ def send_welcome(message):
     bot.reply_to(message, "Howdy, how are you doing?")
 
 @bot.message_handler(func=lambda m: m.new_chat_members is not None)
-def echo_all(message):
+def echo_all(messageService):
     bot.send_message(message.chat.id,message.chat.id)
     bot.send_message(-253255554,"uwu")
     
